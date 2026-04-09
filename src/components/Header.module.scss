@@ -1,0 +1,71 @@
+@use '../styles/mixins' as m;
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: var(--header-height);
+
+
+  &.scrolled {
+    backdrop-filter: blur(10px);
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(12px, 2vw, 20px) clamp(16px, 6vw, 120px);
+}
+
+.innerL {
+  display: flex;
+  align-items: center;
+}
+
+.innerR {
+  display: flex;
+  align-items: center;
+}
+
+.menuList {
+  display: flex;
+  gap: clamp(12px, 2vw, 32px);
+
+  >li {
+    display: flex;
+    align-items: center;
+
+    .menuBtn {
+      padding: clamp(10px, 1vw, 16px) clamp(12px, 1.5vw, 20px);
+      border-radius: 5rem;
+    }
+  }
+}
+
+.hamBtn {
+  display: none;
+}
+
+@include m.respond(tablet) {
+  .inner {
+    padding: 12px 20px;
+
+    .innerR {
+
+      .menuList {
+        display: none;
+      }
+    }
+  }
+
+  .hamBtn {
+    display: flex;
+    position: fixed;
+    top: 2%;
+    right: 20px;
+    z-index: 3000;
+  }
+
+}

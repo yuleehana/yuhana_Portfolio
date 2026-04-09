@@ -1,0 +1,96 @@
+// Font
+$font-main: "Exo 2", sans-serif;
+$font-sub: "Pretendard", sans-serif;
+
+// Title
+.titleXl {
+  font-size: clamp(36px, 8vw, 128px);
+  font-family: $font-main;
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+.titleLg {
+  font-size: clamp(28px, 6vw, 96px);
+  font-family: $font-main;
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+.titleMd {
+  font-size: clamp(20px, 2.5vw, 36px);
+  font-family: $font-main;
+  font-weight: 500;
+  word-break: keep-all;
+}
+
+.titleSm {
+  font-size: clamp(18px, 2vw, 32px);
+  font-family: $font-sub;
+  font-weight: 500;
+  word-break: keep-all;
+}
+
+// Text
+.textLg {
+  font-size: clamp(16px, 1.6vw, 24px);
+  font-family: $font-sub;
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+.textMd {
+  font-size: clamp(14px, 1.1vw, 20px);
+  font-family: $font-sub;
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+.textSm {
+  font-size: clamp(12px, 0.9vw, 14px);
+  font-family: $font-sub;
+  font-weight: 400;
+  color: #5e5556;
+  word-break: keep-all;
+}
+
+.desc {
+  font-size: clamp(14px, 1.1vw, 20px);
+  font-family: $font-sub;
+  font-weight: 300;
+  word-break: keep-all;
+}
+
+// UI
+.link {
+  @extend .textMd;
+  font-weight: 300;
+  color: #56dfb4;
+}
+
+.button {
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-family: $font-main;
+  font-weight: 400;
+  padding: clamp(10px, 0.8vw, 12px) clamp(12px, 1.5vw, 20px);
+  border-radius: 6px;
+}
+
+.buttonActive {
+  @extend .button;
+  background-color: #E28DAA;
+  color: #F1F0F1;
+}
+
+.caption {
+  @extend .textSm;
+  color: #484142;
+  word-break: keep-all;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #56dfb4;
+}

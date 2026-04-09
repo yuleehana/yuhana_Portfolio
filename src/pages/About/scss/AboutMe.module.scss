@@ -1,0 +1,39 @@
+@use '../../../styles/mixins' as m;
+
+.aboutCard {
+  border-radius: clamp(14px, 1.2vw, 18px);
+  background: #fff;
+  padding: clamp(12px, 2vw, 20px) clamp(24px, 3vw, 40px);
+  border: 2px solid rgba($color: #484142, $alpha: 0.2);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.content {
+  display: flex;
+}
+
+.contentL {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: clamp(150px, 30vw, 500px);
+}
+
+@include m.respond(tablet) {
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .contentL {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .descWrap {
+    display: none;
+  }
+}

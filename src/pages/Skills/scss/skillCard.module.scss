@@ -1,0 +1,113 @@
+@use "../../../styles/global.scss" as *;
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(6px, 1vw, 10px);
+    padding: clamp(6px, 1vw, 10px);
+    border-radius: 50px;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(73, 65, 66, 0.15);
+    background: rgba(255, 255, 255, 0.60);
+
+    .skillBtn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: transparent;
+      border-radius: 50px;
+      font-weight: 300;
+      padding: clamp(6px, 1vw, 12px) clamp(12px, 2vw, 24px);
+      font-size: clamp(14px, 1.5vw, 18px);
+    }
+
+    .active {
+      background-color: #F088AB;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+
+  .skillsList {
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    // display: grid;
+    // gap: clamp(12px, 2vw, 24px);
+
+    // &.simple {
+    //   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    // }
+
+    // &.detail {
+    //   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    // }
+
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+
+  &.simple {
+    .cardInner {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(8px, 1vw, 12px);
+
+      .icon {
+        width: auto;
+        aspect-ratio: inherit;
+        height: clamp(32px, 5vw, 80px);
+      }
+    }
+  }
+
+  &.detail {
+    .cardInner {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .icon {
+        width: auto;
+        aspect-ratio: inherit;
+        height: 3.6rem;
+      }
+    }
+  }
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: clamp(12px, 2vw, 24px);
+  font-weight: 400;
+  font-family: "Pretendard", sans-serif;
+}
+
+.desc {
+  font-size: clamp(10px, 1vw + 0.4rem, 16px);
+  font-weight: 400;
+  font-family: "Pretendard", sans-serif;
+  word-break: keep-all;
+  color: #484142;
+}

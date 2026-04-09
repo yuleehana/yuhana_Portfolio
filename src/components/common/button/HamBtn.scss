@@ -1,0 +1,46 @@
+.hamBtn {
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 3000;
+
+  .hamBtnLine {
+    width: 100%;
+    height: 2px;
+    background-color: #322F30;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: 3000;
+
+  }
+
+  .hamBtnLine:nth-child(1) {
+    top: 0;
+  }
+
+  .hamBtnLine:nth-child(2) {
+    top: 9px;
+  }
+
+  .hamBtnLine:nth-child(3) {
+    top: 17px;
+  }
+
+
+  &.active {
+    .hamBtnLine:nth-child(1) {
+      transform: rotate(45deg);
+      top: 10px;
+    }
+
+    .hamBtnLine:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamBtnLine:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 10px;
+    }
+  }
+}

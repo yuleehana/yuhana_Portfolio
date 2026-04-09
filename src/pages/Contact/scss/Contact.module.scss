@@ -1,0 +1,79 @@
+.link {
+  padding: clamp(6px, 1vw, 10px) clamp(12px, 1.5vw, 16px);
+  border-radius: 4px;
+  // border: 1px solid rgba($color: #484142, $alpha: 0.2);
+}
+
+.linkWrap {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formBox {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  padding: clamp(16px, 3vw, 24px);
+  background-color: #F8D6E0;
+  border-radius: 8px;
+  border: 1px solid rgba(#484142, 0.2);
+
+  .input {
+    width: 100%;
+
+    >input {
+      min-height: 40px;
+      padding: clamp(12px, 1.5vw, 16px);
+      border-radius: 4px;
+      background-color: #FDF7F9;
+      width: 100%;
+    }
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  .textareaInput {
+    background-color: #FDF7F9;
+    padding: clamp(12px, 1.5vw, 16px);
+    // margin-bottom: 0.8rem;
+    width: 100%;
+    min-height: 160px;
+    resize: vertical;
+    border-radius: 4px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 320px;
+    // margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    padding: clamp(8px, 1.5vw, 12px);
+    border-radius: 4px;
+    border: 1px solid rgba(#484142, 0.4);
+    background-color: rgba(#fff, 0.4);
+  }
+}
+
+.inputField {
+  border: 1px solid transparent;
+}
+
+.error {
+  border: 1px solid #E15554;
+}
+
+.errorText {
+  font-size: 12px;
+  color: #E15554;
+  margin-top: 4px;
+}
+
+.success {
+  color: #56DFB4;
+  margin-top: 8px;
+}

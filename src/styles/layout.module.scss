@@ -1,0 +1,156 @@
+@use './variables' as *;
+
+// Flex
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex2 {
+  display: flex;
+}
+
+.flexWrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexStart {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexGrid2 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: $spaceXl;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.flexGrid3 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: $spaceMd;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.flexGrid5 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: $spaceMd;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+// Gap
+.gapXs {
+  gap: $spaceXs;
+}
+
+.gapSm {
+  gap: $spaceSm;
+}
+
+.gapMd {
+  gap: $spaceMd;
+}
+
+.gapLg {
+  gap: $spaceLg;
+}
+
+.gapXl {
+  gap: $spaceXl;
+}
+
+// Margin - Top, Bottom
+.mtSm {
+  margin-top: $spaceSm;
+}
+
+.mtMd {
+  margin-top: $spaceMd;
+}
+
+.mtLg {
+  margin-top: $spaceLg;
+}
+
+.mtXl {
+  margin-top: $spaceXl;
+}
+
+.mbSm {
+  margin-bottom: $spaceSm;
+}
+
+.mbMd {
+  margin-bottom: $spaceMd;
+}
+
+.mbLg {
+  margin-bottom: $spaceLg;
+}
+
+.mbXl {
+  margin-bottom: $spaceXl;
+}
+
+// Section
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: $spaceXl;
+}
+
+// Divider
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba($color: #5E5556, $alpha: 0.5);
+}

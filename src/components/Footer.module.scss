@@ -1,0 +1,41 @@
+@use '../styles/mixins' as m;
+
+.copyBtn {
+  padding: clamp(4px, 0.5vw, 6px) clamp(8px, 1vw, 12px);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #e28daa;
+  color: white;
+  transition: all 0.2s;
+}
+
+.copyBtn:hover {
+  transform: translateY(-2px);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.innerL {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 1.5vw, 16px);
+}
+
+@include m.respond(tablet) {
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 3vw, 40px);
+
+    .innerL {
+      display: flex;
+      flex-direction: row;
+      gap: clamp(40px, 5vw, 70px);
+    }
+  }
+}

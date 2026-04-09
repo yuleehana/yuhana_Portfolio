@@ -1,0 +1,21 @@
+// color
+$primaryColor: #E28DAA;
+$secondaryColor: #F8D6E0;
+$pointColor: #56DFB4;
+$pointColor2: #E15554;
+$backgroundColor: #FDF7F9;
+$textColor1: #F1F0F1;
+$textColor2: #131011;
+$textColor3: #201C1C;
+$textColor4: #484142;
+$textColor5: #5E5556;
+$textColor6: #8E8284;
+$textColor7: #A59D9E;
+$textColor8: #DDDBDB;
+
+// Flex/Gap
+$spaceXs: clamp(8px, 1vw, 12px);
+$spaceSm: clamp(12px, 1.5vw, 16px);
+$spaceMd: clamp(16px, 2vw, 24px);
+$spaceLg: clamp(24px, 3vw, 40px);
+$spaceXl: clamp(40px, 5vw, 70px);

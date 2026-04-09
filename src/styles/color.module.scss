@@ -1,0 +1,57 @@
+@use './variables' as *;
+
+.textPrimary {
+  color: $primaryColor;
+}
+
+.textSecond {
+  color: $secondaryColor;
+}
+
+.textPoint {
+  color: $pointColor;
+}
+
+.textPoint2 {
+  color: $pointColor2;
+}
+
+.background {
+  background-color: $backgroundColor;
+}
+
+.background2 {
+  background-color: $secondaryColor;
+}
+
+.text1 {
+  color: $textColor1;
+}
+
+.text2 {
+  color: $textColor2;
+}
+
+.text3 {
+  color: $textColor3;
+}
+
+.text4 {
+  color: $textColor4;
+}
+
+.text5 {
+  color: $textColor5;
+}
+
+.text6 {
+  color: $textColor6;
+}
+
+.text7 {
+  color: $textColor7;
+}
+
+.text8 {
+  color: $textColor8;
+}

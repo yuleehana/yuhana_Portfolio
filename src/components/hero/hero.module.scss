@@ -1,0 +1,38 @@
+@use '../../styles/variables' as *;
+
+.hero {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+}
+
+.background {
+  z-index: 100;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  .star1 {
+    position: absolute;
+    right: 0;
+    top: 1.2%;
+    width: clamp(300px, 45vw, 1200px);
+  }
+
+  .star2 {
+    position: absolute;
+    left: 8.8%;
+    top: 4%;
+    width: clamp(120px, 18vw, 320px);
+  }
+
+  .star3 {
+    position: absolute;
+    top: 9.8%;
+    left: 23%;
+    width: clamp(66px, 8.5vw, 110px);
+  }
+}

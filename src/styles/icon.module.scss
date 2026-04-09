@@ -1,0 +1,39 @@
+@use "./variables" as *;
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.iconXs {
+  width: clamp(12px, 1vw, 16px);
+  height: clamp(12px, 1vw, 16px);
+}
+
+.iconSm {
+  width: clamp(14px, 1.2vw, 20px);
+  height: clamp(14px, 1.2vw, 20px);
+}
+
+.iconMd {
+  width: clamp(16px, 1.5vw, 24px);
+  height: clamp(16px, 1.5vw, 24px);
+}
+
+.iconLg {
+  width: clamp(20px, 2vw, 30px);
+  height: clamp(20px, 2vw, 30px);
+}
+
+.iconXl {
+  width: clamp(24px, 3vw, 40px);
+  height: clamp(24px, 3vw, 40px);
+}
