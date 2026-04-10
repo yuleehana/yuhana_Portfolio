@@ -132,7 +132,7 @@ const Contact = () => {
       <div className={styles.formBox}>
         <form ref={form} onSubmit={sendEmail} className={`${layout.flexColCenter} ${layout.gapXs}`}>
           <div className={`${layout.flex} ${layout.gapXs} ${layout.mbSm}`}>
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
@@ -142,10 +142,23 @@ const Contact = () => {
                 stroke="currentColor"
                 d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"></path>
               <path stroke="currentColor" d="m22 6-10 7L2 6"></path>
-            </svg>
+            </svg> */}
             <p className={`${styles.spanWrap}`}>
               <span className={`${typo.textMd} ${color.text5}`}>메시지는</span>
-              <span className={`${typo.textMd} ${color.text2}`}>yuleehana@gmail.com</span>
+              <div className={`${layout.flex} ${layout.gapXs}`}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke="currentColor"
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"></path>
+                  <path stroke="currentColor" d="m22 6-10 7L2 6"></path>
+                </svg>
+                <span className={`${typo.textMd} ${color.text2}`}>yuleehana@gmail.com</span>
+              </div>
               <span className={`${typo.textMd} ${color.text5}`}>으로 전송됩니다.</span>
             </p>
           </div>
