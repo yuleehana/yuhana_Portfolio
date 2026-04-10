@@ -13,7 +13,7 @@ const SkillCards = ({ icon, label, desc, variant }: SkillCardsProps) => {
   return (
     <li className={`${styles.card} ${styles[variant]}`}>
       <div className={styles.cardInner}>
-        <div>
+        <div className={styles.iconWrapper}>
           <img src={icon} alt={label} className={styles.icon} />
         </div>
         <div className={`${layout.flexCol} ${layout.gapXs}`}>
