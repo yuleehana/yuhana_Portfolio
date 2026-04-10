@@ -153,8 +153,8 @@ const Contact = () => {
             <input
               placeholder="보내는 사람"
               type="text"
-              name="from_name"
-              id="from_name"
+              name="name"
+              id="name"
               value={name}
               onChange={(e) => {
                 setName(e.target.value);
@@ -170,8 +170,8 @@ const Contact = () => {
             <input
               placeholder="이메일"
               type="text"
-              name="reply_to"
-              id="reply_to"
+              name="email"
+              id="email"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
