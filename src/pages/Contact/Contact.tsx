@@ -143,7 +143,7 @@ const Contact = () => {
                 d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"></path>
               <path stroke="currentColor" d="m22 6-10 7L2 6"></path>
             </svg>
-            <p className={`${layout.flex} ${layout.gapXs}`}>
+            <p className={`${styles.spanWrap}`}>
               <span className={`${typo.textMd} ${color.text5}`}>메시지는</span>
               <span className={`${typo.textMd} ${color.text2}`}>yuleehana@gmail.com</span>
               <span className={`${typo.textMd} ${color.text5}`}>으로 전송됩니다.</span>

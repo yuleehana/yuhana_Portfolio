@@ -39,3 +39,13 @@
     }
   }
 }
+
+@include m.respond(mobile) {
+  .inner {
+    .innerL {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(16px, 2vw, 24px);
+    }
+  }
+}
