@@ -12,7 +12,7 @@ const AboutMe = () => {
       <div className={`${styles.content} ${layout.flex2} ${layout.gapXl}`}>
         <div className={`${styles.contentL}`}>
           <div className={`${layout.flex} ${styles.image}`}>
-            <img src="/public/images/myProfile.png" alt="프로필 이미지" />
+            <img src="/images/myProfile.png" alt="프로필 이미지" />
           </div>
           <div className={`${layout.flexCol} ${layout.gapMd}`}>
             <p className={typo.titleMd}>유하나</p>
