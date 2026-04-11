@@ -27,7 +27,7 @@ export interface PROJECTS_MENU {
     problems: string[];
     solutions: string[];
     results: string[];
-    members: {
+    members?: {
       me?: boolean;
       name: string;
       role: string[];

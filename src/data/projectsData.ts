@@ -2,6 +2,209 @@ import type { PROJECTS_MENU } from '../types/projectsType';
 
 export const PROJECTS_DATA: PROJECTS_MENU[] = [
   {
+    id: 'portfolio',
+    title: '웹 포트폴리오',
+    subTitle: '',
+    thumbnail: '/images/webPortfolioMain.svg',
+    period: '2026.03.13~2026.04.10',
+
+    team: '개인 프로젝트',
+
+    github: 'https://github.com/yuleehana/yuhana_Portfolio.git',
+
+    shortDescription: '',
+
+    skills: [
+      {
+        name: 'React',
+        img: '/icon/reactLogo.svg',
+      },
+      {
+        name: 'Vite',
+        img: '/icon/viteLogo.png',
+      },
+      {
+        name: 'TypeScript',
+        img: '/icon/typescriptLogo.svg',
+      },
+      {
+        name: 'SCSS',
+        img: '/icon/scssLogo.png',
+      },
+      {
+        name: 'Axios',
+        img: '/icon/axiosLogo.png',
+      },
+      {
+        name: 'Github',
+        img: '/icon/githubLogo.svg',
+      },
+      {
+        name: 'Vercel',
+        img: '/icon/vercelLogo.svg',
+      },
+      {
+        name: 'Figma',
+        img: 'icon/figmaLogo.svg',
+      },
+    ],
+
+    detail: {
+      description: [
+        `프론트엔드 개발자로서의 역량과 프로젝트 경험을 효과적으로 전달하기 위해 
+    사용자 경험 중심으로 설계·구현한 개인 포트폴리오 웹사이트입니다.`,
+        `단순 결과물 나열이 아닌, 프로젝트 탐색 흐름·정보 전달 구조·상호작용 경험을 중심으로 
+    UI/UX 구조를 설계하고, 컴포넌트 재사용성과 상태 관리 구조를 고려한 프론트엔드 아키텍처를 함께 구현했습니다.`,
+      ],
+
+      keyFeatures: [
+        {
+          title: '프로젝트 탐색 UX 및 모달 인터랙션 설계',
+          column: [
+            {
+              subTitle: '프로젝트 카드 기반 리스트 UI 구현',
+              desc: [
+                'map 기반 데이터 렌더링으로 확장 가능한 구조 설계',
+                '프로젝트별 데이터 분리로 유지보수 용이성 확보',
+              ],
+            },
+            {
+              subTitle: '모달 기반 상세 정보 제공 UX',
+              desc: [
+                '선택한 프로젝트만 열리는 구조로 상태 분리 관리',
+                '배경 스크롤 방지 및 모달 내부 스크롤 처리로 집중도 향상',
+              ],
+            },
+            {
+              subTitle: '사용자 흐름을 고려한 정보 계층 구조 설계',
+              desc: ['Overview → Detail → Problem/Solution 구조로 정보 전달 흐름 구성'],
+            },
+          ],
+        },
+        {
+          title: '컴포넌트 재사용성과 UI 구조 설계',
+          column: [
+            {
+              subTitle: '공통 컴포넌트 분리 및 재사용 구조 설계',
+              desc: [
+                'SectionTitle, SkillCard, ProjectCard 등 UI 단위 컴포넌트화',
+                'props 기반 variant 패턴으로 다양한 UI 대응',
+              ],
+            },
+            {
+              subTitle: 'map 기반 데이터 렌더링 구조',
+              desc: [
+                '스킬/프로젝트 데이터를 객체로 관리하여 UI와 로직 분리',
+                '확장 시 코드 수정 최소화',
+              ],
+            },
+            {
+              subTitle: '스타일 모듈화 (SCSS Module)',
+              desc: ['컴포넌트 단위 스타일 분리로 충돌 방지', 'variant 기반 스타일 확장 구조 설계'],
+            },
+          ],
+        },
+        {
+          title: '사용자 인터랙션 및 상태 관리',
+          column: [
+            {
+              subTitle: '햄버거 메뉴 인터랙션 구현',
+              desc: [
+                '클릭 시 X 형태로 변환되는 애니메이션 구현',
+                'Sidebar와 상태 연동하여 UI 일관성 유지',
+              ],
+            },
+            {
+              subTitle: '폼 입력 검증 및 이메일 전송 기능',
+              desc: [
+                '이름/이메일 유효성 검사 로직 구현',
+                'EmailJS를 활용한 이메일 전송 기능 구현',
+                '에러/성공 상태 UI 피드백 처리',
+              ],
+            },
+            {
+              subTitle: '로딩 및 상태 처리 UX 개선',
+              desc: ['메일 전송 시 로딩 상태 표시', '사용자 행동에 대한 즉각적인 피드백 제공'],
+            },
+          ],
+        },
+        {
+          title: '반응형 UI 및 디자인 시스템',
+          column: [
+            {
+              subTitle: 'Clamp 기반 반응형 타이포그래피/레이아웃',
+              desc: ['다양한 해상도에서 일관된 UI 유지'],
+            },
+            {
+              subTitle: '아이콘 및 이미지 비율 정규화',
+              desc: [
+                '아이콘 wrapper + object-fit을 활용한 비율 통일',
+                '해상도 및 이미지 크기 차이에 따른 UI 깨짐 방지',
+              ],
+            },
+            {
+              subTitle: '디자인 토큰 분리',
+              desc: ['color, typography, layout 등 스타일 시스템화'],
+            },
+          ],
+        },
+        {
+          title: '배포 및 환경 관리',
+          column: [
+            {
+              subTitle: 'Vercel을 통한 배포 자동화',
+              desc: ['Git 연동 기반 CI/CD 환경 구축'],
+            },
+            {
+              subTitle: '환경 변수 관리',
+              desc: ['.env 파일을 통한 API 키 관리', '보안 이슈 방지를 위한 Git 관리 전략 적용'],
+            },
+            {
+              subTitle: '빌드 및 패키지 관리 이슈 해결 경험',
+              desc: [
+                '패키지 매니저 충돌(package-lock / yarn) 문제 해결',
+                'Vercel 빌드 에러 디버깅 경험',
+              ],
+            },
+          ],
+        },
+      ],
+      problems: [
+        '프로젝트 클릭 시 모든 모달이 동시에 열리는 상태 관리 문제',
+        '모달 오픈 시 배경 스크롤이 함께 움직이는 UX 문제',
+        '이미지 및 아이콘 비율이 일관되지 않아 UI 완성도 저하',
+        '이메일 전송 시 발신자 정보가 명확히 전달되지 않는 문제',
+        '패키지 매니저 혼용으로 인한 빌드 경고 발생',
+        '외부 라이브러리(Analytics 등) 적용 시 환경 불일치 문제',
+      ],
+
+      solutions: [
+        '선택된 프로젝트 ID 기반으로 모달 상태를 분리 관리하여 단일 모달만 열리도록 개선',
+        'body overflow 제어를 통해 모달 오픈 시 배경 스크롤 차단',
+        '이미지 wrapper + object-fit 구조로 아이콘 비율 통일',
+        'EmailJS 템플릿 변수 매핑 수정으로 발신자 정보 정상 출력',
+        '패키지 매니저 단일화 및 lock 파일 정리로 빌드 환경 안정화',
+        '프로젝트 환경(Vite vs Next)에 맞는 라이브러리 선택으로 빌드 에러 해결',
+      ],
+
+      results: [
+        '단순 UI 구현을 넘어 상태 관리와 UX 흐름 설계 경험 확보',
+        '컴포넌트 재사용성과 확장성을 고려한 구조 설계 역량 향상',
+        '실제 사용자 경험(스크롤, 인터랙션, 피드백)을 고려한 UI 개선 경험',
+        '배포 및 빌드 과정에서 발생하는 문제를 직접 해결하며 실무 대응력 강화',
+        '프론트엔드 개발에서 “구현”뿐 아니라 “구조 설계”의 중요성에 대한 이해도 향상',
+      ],
+
+      images: [
+        '/images/webPortfolioDetail1.svg',
+        '/images/webPortfolioDetail2.svg',
+        '/images/webPortfolioDetail3.svg',
+        '/images/webPortfolioDetail4.svg',
+      ],
+    },
+  },
+
+  {
     id: 'disney-renewal',
     title: 'Disney Plus',
     subTitle: '안심 육아를 위한 “우리  아이 맞춤 보호” 리뉴얼 프로젝트',

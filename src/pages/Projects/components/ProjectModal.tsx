@@ -108,10 +108,16 @@ const ProjectModal = ({ project, onClose }: ModalProps) => {
               <span className={typo.textMd}>{project.period}</span>
             </div>
 
-            <div className={`${layout.flexCol} ${layout.gapLg}`}>
+            {/* <div className={`${layout.flexCol} ${layout.gapLg}`}>
               <span className={typo.titleSm}>구성원</span>
               <MemberCard members={project.detail.members} />
-            </div>
+            </div> */}
+            {project.detail.members && (
+              <div className={`${layout.flexCol} ${layout.gapLg}`}>
+                <span className={typo.titleSm}>구성원</span>
+                <MemberCard members={project.detail.members} />
+              </div>
+            )}
 
             <div className={`${layout.flexCol} ${layout.gapLg}`}>
               <span className={typo.titleSm}>주요 기능</span>
