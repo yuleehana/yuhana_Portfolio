@@ -10,6 +10,7 @@ export const PROJECTS_DATA: PROJECTS_MENU[] = [
 
     team: '개인 프로젝트',
 
+    demo: 'https://yuhana-portfolio.vercel.app/',
     github: 'https://github.com/yuleehana/yuhana_Portfolio.git',
 
     shortDescription: '',
