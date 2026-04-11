@@ -11,7 +11,13 @@ UI 구조와 프론트엔드 아키텍처를 함께 설계했습니다.
 
 ## 🔗 Live Demo
 
-👉 ([배포 주소](https://yuhana-portfolio.vercel.app/))
+👉 ([사이트 바로가기](https://yuhana-portfolio.vercel.app/))
+
+---
+
+## 📸 Screenshots
+
+![Main Page](https://yuhana-portfolio.vercel.app/images/webPortfolioMain.svg)
 
 ---
 
