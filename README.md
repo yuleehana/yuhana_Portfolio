@@ -166,4 +166,4 @@ src/
 ## 📬 Contact
 
 - Email: yuleehana@gmail.com
-- GitHub: [(깃허브 링크)](https://github.com/yuleehana)
+- GitHub: (https://github.com/yuleehana)

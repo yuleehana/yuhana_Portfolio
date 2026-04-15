@@ -200,7 +200,6 @@ export const PROJECTS_DATA: PROJECTS_MENU[] = [
         '/images/webPortfolioDetail1.svg',
         '/images/webPortfolioDetail2.svg',
         '/images/webPortfolioDetail3.svg',
-        '/images/webPortfolioDetail4.svg',
       ],
     },
   },
